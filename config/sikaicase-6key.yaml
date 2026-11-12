@@ -1,0 +1,24 @@
+# SikaiCase 6 keys + 1 knob (USB 1189:8840) — my mapping.
+# Edit, then:  sudo ./target/release/ch57x-keyboard-tool upload config/sikaicase-6key.yaml
+# Syntax for every action: doc/actions.md  (key names: `ch57x-keyboard-tool show-keys`)
+#
+# Grid position = the key that typed that letter with the factory mapping:
+#   [ a  b  c ]
+#   [ d  e  f ]   (knob)
+model: ch57x-1
+orientation: normal
+rows: 2
+columns: 3
+knobs: 1
+layers:
+  - buttons:
+      - ["cmd-c",       "cmd-v",       "cmd-z"]        # copy, paste, undo
+      - ["dictation",   "cmd-shift-4", "ctrl-cmd-q"]   # dictation on/off, area screenshot, lock screen
+    knobs:
+      - ccw: "opt-cmd-minus"   # zoom out  (Accessibility Zoom)
+        press: "opt-cmd-8"     # zoom on/off
+        cw: "opt-cmd-equal"    # zoom in
+
+# To trigger macOS Shortcuts.app (or any app hotkey), send a chord nothing else uses,
+# e.g. "ctrl-opt-shift-cmd-1", then in Shortcuts.app open the shortcut → ⓘ → Add Keyboard Shortcut
+# and press that key on the pad. Avoid ctrl-opt-shift-cmd-dot (it triggers macOS sysdiagnose).

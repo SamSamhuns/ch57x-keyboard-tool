@@ -1,0 +1,15 @@
+# SikaiCase 6 keys + 1 knob (USB 1189:8840) — factory mapping.
+# Upload this to restore the out-of-the-box behaviour (keys a–f, knob 1/2/3).
+model: ch57x-1
+orientation: normal   # knob on the right
+rows: 2
+columns: 3
+knobs: 1
+layers:
+  - buttons:
+      - ["a", "b", "c"]
+      - ["d", "e", "f"]
+    knobs:
+      - ccw: "1"
+        press: "2"
+        cw: "3"
