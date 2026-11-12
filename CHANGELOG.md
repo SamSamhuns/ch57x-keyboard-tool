@@ -4,6 +4,7 @@
 
 - Add screen brightness and web page media keys (`screenbrightnessup`,
   `screenbrightnessdown`, `webpagehome`, `webpageback`, `webpageforward`)
+- Add `dictation` media key (consumer code 0xCF, the 🎤 key on Mac keyboards)
 
 ## 1.7.0
 

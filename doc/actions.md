@@ -204,6 +204,7 @@ Control media playback and system functions:
 | `mute` | Mute audio |
 | `volumeup` | Increase volume |
 | `volumedown` | Decrease volume |
+| `dictation` | Toggle dictation (the 🎤 key on Mac keyboards) |
 | `favorites` | Open favorites |
 | `calculator` | Open calculator |
 | `screenlock` | Lock screen |

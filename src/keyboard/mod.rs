@@ -92,6 +92,7 @@ pub enum MediaCode {
 	Previous = 0xb6,
 	Stop = 0xb7,
 	Play = 0xcd,
+	Dictation = 0xcf,
 	Mute = 0xe2,
 	VolumeUp = 0xe9,
 	VolumeDown = 0xea,
